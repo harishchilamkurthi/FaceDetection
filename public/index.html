@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Learn and Understand AngularJS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+          <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em;
+            }
+        </style>
+        
+        <!-- load angular via CDN -->
+           <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-messages.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+            <script src="/IDPModule/services/FaceAPIService.js"></script>
+           <script src="/IDPModule/IDPModule.js"></script>
+          <script src="/IDPModule/controllers/ChooseFileController.js"></script>
+        <script src="/IDPModule/controllers/FaceTrainController.js"></script>
+         <script src="/IDPModule/controllers/FaceDetectController.js"></script>
+     
+        <script>
+            let app = angular.module("myApp",["IDPModule",'ngMaterial']);
+
+            
+        </script>
+
+
+    </head>
+    <body>
+
+  <!--    <face-train></face-train>
+
+      <face-detect></face-detect> -->
+
+   <!--   <choose-file ></choose-file> -->
+
+   <face-train></face-train>
+    <face-detect></face-detect>
+
+    </body>
+</html>
